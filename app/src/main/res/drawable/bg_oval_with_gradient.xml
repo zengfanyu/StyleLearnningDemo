@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+
+    <padding
+        android:bottom="4dp"
+        android:left="4dp"
+        android:right="4dp"
+        android:top="4dp"/>
+    <!-- size设置形状的大小 -->
+    <size
+        android:width="70dp"
+        android:height="70dp"/>
+    <!-- gradient设置渐变
+    startColor:开始渐变色
+    centerColor：中间过渡色
+    endColor：最终渐变色
+    centerX：X方向偏移量， 默认0.5
+    centerY：Y方向偏移量， 默认0.5
+    type:radial:由圆心向外渐变 sweep：雷达扫描渐变 linear ： 线性渐变
+    -->
+    <gradient
+        android:startColor="#ffffff"
+        android:centerColor="@color/colorAccent"
+        android:endColor="#000000"
+        android:gradientRadius="40dp"
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:type="sweep"/>
+
+
+</shape>

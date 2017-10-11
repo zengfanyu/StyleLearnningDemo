@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="100"
+    android:exitFadeDuration="100">
+    <!-- 当前窗口失去焦点时 圆角无色有stroke 拉下通知栏-->
+    <item android:state_window_focused="false" android:drawable="@drawable/bg_btn_lost_window_focused"/>
+    <!-- 不可用时 圆角灰-->
+    <item  android:state_enabled="false" android:drawable="@drawable/bg_btn_disable"/>
+    <!-- 按压时 圆角透明蓝-->
+    <item android:drawable="@drawable/bg_btn_pressed" android:state_pressed="true" />
+    <!-- 被选中时 圆角玫瑰亮红-->
+    <item android:drawable="@drawable/bg_btn_selected" android:state_selected="true" />
+    <!-- 被激活时 圆角玫瑰暗红 -->
+    <item android:drawable="@drawable/bg_btn_activated" android:state_activated="true" />
+    <!-- 默认时 圆角蓝色-->
+    <item android:drawable="@drawable/bg_btn_normal" />
+</selector>

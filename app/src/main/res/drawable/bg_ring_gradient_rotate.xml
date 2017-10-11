@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    将圆环包裹在 rotate标签下，既可以实现progressBar的效果，将此drawable设置给
+    progressBar的indeterminateDrawable属性
+-->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toDegrees="1080">
+<shape
+       android:innerRadius="20dp"
+       android:shape="ring"
+       android:thickness="5dp"
+       android:useLevel="false">
+
+    <gradient
+        android:centerColor="@color/colorPrimaryDark"
+        android:endColor="#ffffff"
+        android:startColor="@color/colorPrimary"
+        android:type="sweep"/>
+
+</shape>
+</rotate>
